@@ -14,6 +14,7 @@ function Todolist(){
             <input id ="d1" type="text" />
             <button onClick={abc}>Add list</button>
             <ul>{
+                
                 x.map((a,i)=>{
                     return<li>{a}  <button onClick={del}>Delete</button></li>
                 })

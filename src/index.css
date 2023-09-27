@@ -7,3 +7,24 @@
   margin: 10px;
   padding: 10px;
 }
+#countries{
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ justify-content: space-between;
+}
+#countries li{
+  width: 200px;
+  height: 200px;
+  border: 2px solid lightblue;
+  margin: 5px;
+  padding: 10px;
+  list-style: none;
+ 
+  
+  
+}
+#countries img{
+  width: 100%;
+  
+}
