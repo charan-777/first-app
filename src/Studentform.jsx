@@ -12,12 +12,11 @@ function Studentform() {
             age: "",
             username:"",
             password: ""
-
         },
         validationSchema: Yup.object({
             firstname: Yup.string().required("please fill this required field "),
-            lastname: Yup.string().required("please fill this required field"),
-            password: Yup.string().required("please fill this required field").matches(/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/, "Give me the correct pattern"),
+            lastname : Yup.string().required("please fill this required field"),
+            password : Yup.string().required("please fill this required field").matches(/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/, "Give me the correct pattern"),
             age: Yup.string().required("please fill this required field").test({
                 name: "GenderBasedAgeValidation",
                 message: "Give Me Correct Age",
