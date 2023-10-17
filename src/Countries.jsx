@@ -40,9 +40,9 @@ function Country() {
                 {
                     countries.map((a) => {
                         return <li>
-                            <h2> {a.name.common}</h2>
-                            <img src={a.flags[0]} alt="" width={200} />
-                            <h2>population:{a.population}</h2>
+                            <h3> {a.name.common}</h3>
+                            <img className="photo" src={a.flags[0]} alt=""  />
+                            <h3>population:{a.population}</h3>
                         </li>
                     })
                 }

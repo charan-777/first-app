@@ -9,20 +9,21 @@
 ul li {
   
   list-style-type: none;
-  margin: 10px;
-  padding: 20px;
+  margin: 5px;
+  padding: 10px;
+  width: 200px;
   background-color: beige;
   border-radius: 20px;
   text-align: center;
-  margin-top: 50px;
-  transition: width 2s;
+  transition: width 2s ease;
+  box-sizing: border-box;
   box-shadow: inset 0px 0px 10px 0px;
   
 
 }
 ul li:hover{
-  width: 600px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
 }
 .d2 {
   text-align: center;
@@ -42,4 +43,7 @@ ul li:hover{
  padding: 20px;
  background-color: cadetblue;
 box-shadow: inset 0px 0px 10px 0px;
+}
+.photo{
+  width: 100px;
 }
