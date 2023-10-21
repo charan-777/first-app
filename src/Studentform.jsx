@@ -28,10 +28,10 @@ function Form() {
             setStudentform({ ...studentform, technologies: [...studentform.technologies, e.target.value] })
         }
         else {
-            var temp=([...studentform])
-            var ind=temp.technologies.indexOf(e.target.value)
+            var temp=([...studentform.technologies])
+            var ind=temp.indexOf(e.target.value)
                temp.splice(ind,1)
-            setStudentform([...studentform.technologies[{...temp}]])
+            setStudentform({...studentform,technologies:[...temp]})
         }
     }
     return (
