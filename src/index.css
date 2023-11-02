@@ -1,22 +1,41 @@
-
-.mydiv{
-  box-shadow: 2px 2px 5px lightgray ,-2px -2px 5px lightgray;
-  width: 700px;
-  height: auto;
+.mydiv {
+  box-shadow: 2px 2px 5px lightgray, -2px -2px 5px lightgray;
+  width: 800px;
   box-sizing: border-box;
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 70px;
+  border-radius: 5px;
+  background-color: azure;
+  display: flex;
+  flex-direction: row;
+ 
+}
 
-}
-.mybox{
-  margin-left: 350px;
-}
-.map{
-  box-shadow: 2px 2px 5px lightgray ,-2px -2px 5px lightgray ;
-  width: 500px;
+.map {
+  box-shadow: 2px 2px 5px lightgray, -2px -2px 5px lightgray;
   box-sizing: border-box;
   height: auto;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 200px;
+  width: 400px;
   
+}
+
+body {
+  background-color: rgb(235, 243, 240);
+}
+
+.btn {
+  border-radius: 50%;
+  background-color: aliceblue;
+  border-color: burlywood;
+ 
+}
+.map-header{
+  display: flex;
+  justify-content: space-between;
 }

@@ -4,12 +4,12 @@ import Question from './question';
 
 function App() {
   return (
-    <div className='main '>
+   
     <div className='mydiv'>
-      <h3>Question And Answers About Login</h3>
+      <h2 className='idiv'>Question And <br />  Answers  About  Login </h2>
       <Question></Question>
     </div>
-    </div>
+  
   );
 }
 
