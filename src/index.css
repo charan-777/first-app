@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.head{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 200px;
 }
+.second-div{
+  background-color: lightgoldenrodyellow;
+  color: lightsalmon;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px lavender,-2px -2px 5px lavender ;
+}
+.pic{
+  width: 150px;
+  margin: 10px ;
+}
+.idiv{
+  justify-content: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 300px;
+  
+}
+.inside{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.img{
+  width: 100%;
+  text-align: end;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.content{
+  width: 100%;
+
+}
+.boot{
+  margin-top: 60px;
+  text-align: center;
+}
+.remove-btn{
+  color: lightcoral;
+}
+.btn{
+  width: 150px;
+  border-color: rgb(238, 165, 179);
+  background-color: azure;
+  border-radius: 5px;
+  color: crimson;
+  margin-left: 480px;
+}
+.last{
+  margin-left: 40%;
+  margin-bottom: 50%;
+}
+.bi-handbag-fill{
+  margin-left: 40%;
 }
