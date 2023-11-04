@@ -23,7 +23,6 @@ function Shopping() {
             amount: 1,
         },
     ]);
-    var [num, setNum] = React.useState(1)
 
     function remove(i) {
         var temp = ([...cart])
@@ -56,7 +55,7 @@ function Shopping() {
         <div className="cart">
             <div className="second-div">
                 <h1 className="head">Use Reducer <i class="bi bi-handbag-fill"></i><span className="bag">{cart.reduce((u,v)=>u+v.amount,0)}</span> </h1>
-            </div>
+                </div>
             <h1 className="inside">Your Bag</h1>
             {
                 cart.map((a, i) => {

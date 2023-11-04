@@ -14,6 +14,7 @@
 .pic{
   width: 150px;
   margin: 10px ;
+  border-radius: 10px;
 }
 .idiv{
   justify-content: center;
@@ -51,6 +52,7 @@
   border-radius: 5px;
   color: crimson;
   margin-left: 480px;
+  
 }
 .last{
   margin-left: 40%;
@@ -58,4 +60,7 @@
 }
 .bi-handbag-fill{
   margin-left: 40%;
+}
+.mybox{
+  background-color: aliceblue;
 }
