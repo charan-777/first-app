@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header {
+  box-shadow: 2px 2px 5px black, -2px -2px 5px aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pic {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.secdiv {
+  box-shadow: 2px 2px 5px black, -2px -2px 5px aliceblue;
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 300px;
+}
+
+.inp {
+  width: 450px;
+  border-color: black;
+  height: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color:azure;
+}
+
+.main-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.thrdiv {
+  width: 250px;
+  margin: 10px;
+  box-shadow: 0px 2px 5px lightslategray;
+  border-radius: 5px;
+}
+
+.thrdiv:hover {
+  box-shadow: 2px 6px 5px lightslategray;
+  transition: 1.0s;
+}
+
+.btn {
+  background-color: rgb(70, 133, 8);
+  color: aliceblue;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.fdiv {
+  padding: 20px;
+}
+.hom{
+  margin-left: 800px;
+  
+}
+.abt{
+  margin-left: 900px;
 }
