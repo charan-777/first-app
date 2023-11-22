@@ -7,8 +7,10 @@ function Form() {
         gender: "",
         technologies: ""
     })
-    function add(e) {
-        alert(JSON.stringify(stdform))
+    var [allstud, setAllstud] = React.useState([]);
+
+    function add() {
+        setAllstud([...allstud, { ...stdform }])
     }
     function handlefirstname(e) {
         setStdform({ ...stdform, firstname: e.target.value })
@@ -63,6 +65,22 @@ function Form() {
             <br />
 
             <button onClick={(e) => { add(e) }}>Add student</button>
+            <ul className="list">
+                {
+                    allstud.map((a) => {
+                        return (
+                        <li> 
+                            <h3>{a.firstname.toUpperCase() + a.lastname}</h3>
+                             <h3>{a.dob}</h3>
+                             <h3>{a.gender}</h3>
+                             <h3>{a.technologies}</h3>
+                        </li>
+                               
+                        )
+                    })
+                }
+            </ul>
+
 
         </div>
     )
