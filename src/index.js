@@ -3,12 +3,70 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { store } from './app/store'
+import { Provider } from 'react-redux'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+import Countries from './features/countries/countries';
+import Products from './features/products/products';
+import Counter from './features/counter/counter';
+import Todolist from './features/todolist/todolist'
+import CountryDetails from './features/countries/countrydetails';
+import Addproduct from './features/products/Addproducts';
+import Editproduct from './features/products/editproduct';
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:<App></App> ,
+    children:[
+      {
+        path: "/countries",
+        element:<Countries></Countries>,
+        children:[
+         {
+          path:"/countries/countrydetails/:cname",
+          element:<CountryDetails></CountryDetails>
+
+         }
+        ]
+      },
+      {
+        path: "/products",
+        element:<Products></Products>
+      },
+      {
+        path: "/counter",
+        element:<Counter></Counter>
+      },
+      {
+        path: "/todolist",
+        element:<Todolist></Todolist>
+      },
+      {
+        path:"/",
+        element:<Counter></Counter>
+      },
+      {
+        path:"/addproducts",
+        element:<Addproduct></Addproduct>
+      },
+      {
+        path:"/editproduct/:pid",
+        element:<Editproduct></Editproduct>
+      }
+    ]
+  },
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={store}>
+     <RouterProvider router={router} />
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
