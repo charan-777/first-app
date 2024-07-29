@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 function Question() {
+  var [flag,setFlag]=React.useState(false)
   var [answer, setAnswer] = React.useState([
     {
       id: 1,

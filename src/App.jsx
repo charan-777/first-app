@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Question from './question';
+import Question from './Question';
 
 function App() {
   return (
