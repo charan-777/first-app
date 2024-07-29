@@ -8,7 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Counter from './counter';
+import Counter from './Counter';
 import Todolist from './Todolist';
 import Countries from './Countries';
 import CountryDetails from './CountryDetails';
